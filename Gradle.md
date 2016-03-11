@@ -89,3 +89,8 @@ app/build.gradle
         }
     }
 ```
+### 4.打包
+*release
+```sh
+./gradlew assembleRelease
+```
