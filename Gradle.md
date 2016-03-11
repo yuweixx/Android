@@ -90,7 +90,7 @@ app/build.gradle
     }
 ```
 ### 4.打包
-*release
+* release
 ```sh
 ./gradlew assembleRelease
 ```
