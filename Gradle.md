@@ -54,7 +54,7 @@ app/build.gradle
     }
 ```
 
-###签名、混淆、对齐
+### 3.签名、混淆、对齐
 
 ```gradle
     signingConfigs {
