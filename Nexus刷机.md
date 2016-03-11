@@ -2,9 +2,9 @@
 
 * 很多时候，直接使用官方提供的flash-all.bat或flash-all.sh会刷机失败，这个时候就只好靠手动刷机了，步骤如下：
 
-** 1.解压出zip包中的文件。
+ ** 1.解压出zip包中的文件。
 
-** 2.连接fastboot mode状态的手机，按照以下命令进行刷机。
+ ** 2.连接fastboot mode状态的手机，按照以下命令进行刷机。
 ```shell
 #Flash bootloader and radio (radio does not appear on all devices, if it's not in your tgz, you don't need it)
 
