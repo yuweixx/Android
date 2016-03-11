@@ -1,6 +1,6 @@
 # Android Studio Use Gradle
 
-### 1.Change PackageName
+### 修改包名
 
 ```gradle
     flavorDimensions "flavor"
@@ -17,7 +17,7 @@
     }
     }
 ```
-### 2.Change AppName
+### 修改应用名
 
 Manifest.xml
 ```HTML
