@@ -53,3 +53,39 @@ app/build.gradle
     }
     }
 ```
+
+###签名、混淆、对齐
+
+```gradle
+    signingConfigs {
+        debug {
+            storeFile file("/Users/pianpian/.android/debug.keystore")
+        }
+        
+        release {
+            storeFile file("/Users/pianpian/.android/acb123.keystore")
+            storePassword "abc123"
+            keyAlias "abc123"
+            keyPassword "abc123"
+        }
+    }
+    
+    buildTypes {
+        debug {
+            buildConfigField "boolean","LOG_DEBUG","true"
+            versionNameSuffix "-debug"
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResouces false
+            signingConfig signgingConfigs.debug
+        }
+        
+        release {
+            buildConfigField "boolean","LOG_DEBUG","true"
+            minifyEnabled true
+            zipAlignEnabled true
+            shrinkResouces true
+            signingConfig signgingConfigs.release            
+        }
+    }
+```
