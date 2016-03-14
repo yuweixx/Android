@@ -77,7 +77,7 @@ app/build.gradle
             minifyEnabled false
             zipAlignEnabled false
             shrinkResouces false
-            signingConfig signgingConfigs.debug
+            signingConfig signingConfigs.debug
         }
         
         release {
@@ -85,7 +85,7 @@ app/build.gradle
             minifyEnabled true
             zipAlignEnabled true
             shrinkResouces true
-            signingConfig signgingConfigs.release            
+            signingConfig signingConfigs.release            
         }
     }
 ```
