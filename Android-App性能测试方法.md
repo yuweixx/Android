@@ -40,7 +40,7 @@
    * 集合中对象没清理造成内存泄漏
    * 资源对象没关闭造成内存泄漏
 
-# CPU
+## CPU
  * 工具
   * adb shell
     * ``` dumpsys cpuinfo ```
@@ -49,13 +49,13 @@
   * Android Monitor
   * 第三方工具：Emmagee、安测试、腾讯的GT、iTest等
 
-# 电量
+## 电量
  * 工具
   * Battery Historion
     * https://github.com/google/battery-historian (仅Android 5.0以上设备可用)
   * 还可以使用安培仪或第三方软件测量，但都是整机电流变化。
 
-# 流量
+## 流量
  * 测试点
   * 首次启动流量提示
   * 后台运行数小时后流量值
@@ -68,3 +68,10 @@
     * ``` cat /proc/uid_stat/uid/tcp_snd ```
     * ``` cat /proc/net/xt_qtaguid/stats ```
     * Android4.0以下使用 ``` cat /proc/$pid/net/dev ```
+
+## 界面渲染
+### 界面过度绘制
+* 名词解释：屏幕上某个像素在单个帧中被重绘次数
+* 导致问题：应用加载过慢->手机卡死->用户体验变差
+* 测试方法：开发者选项中打开"调试GPU过度绘制"->"显示过度绘制区域"
+
