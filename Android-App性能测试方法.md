@@ -54,3 +54,16 @@
   * Battery Historion
     * https://github.com/google/battery-historian (仅Android 5.0以上设备可用)
   * 还可以使用安培仪或第三方软件测量，但都是整机电流变化。
+
+# 流量
+ * 测试点
+  * 首次启动流量提示
+  * 后台运行数小时后流量值
+  * 极限操作下流量峰值
+  * 运行时流量均值
+ * 测试方法
+  * 抓包工具：tcpdump、wireshark、charles
+  * adb shell
+    * cat /proc/uid_stat/uid/tcp_rcv
+    * cat /proc/uid_stat/uid/tcp_snd
+    * cat /proc/net/xt_qtaguid/stats
