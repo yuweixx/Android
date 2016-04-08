@@ -27,3 +27,15 @@
      * dumpsys meminfo packagename/pid  查看native进程和java进程
      * procrank  只能查看java进程
      * getprop | grep dalvik.vm.heapgrowhlimit  查看阈值
+  * 测试场景
+   * 功能测试中监测内存数据
+   * 异常情况
+     * 内存空间不足
+     * 内存使用达到阈值
+  * 注意事项
+   * 非静态内部类的静态实例容易造成内存泄漏
+   * activity使用静态成员
+   * 使用handle时的内存问题
+   * 注册某个对象后未反注册
+   * 集合中对象没清理造成内存泄漏
+   * 资源对象没关闭造成内存泄漏
