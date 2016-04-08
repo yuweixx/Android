@@ -19,5 +19,11 @@
      * 内存监视器
      * 堆内存查看器
      * 内存分配跟踪器
-   * Leaks
-   * 
+     * http://developer.android.com/intl/zh-cn/tools/debugging/ddms.html
+   * ActivityManager.MemoryInfo()
+     * Emmagee、安测试、腾讯的GT、iTest等测试工具用的此方法
+   * adb shell
+     * top  查看VSS、RSS
+     * dumpsys meminfo packagename/pid  查看native进程和java进程
+     * procrank  只能查看java进程
+     * getprop | grep dalvik.vm.heapgrowhlimit  查看阈值
