@@ -23,10 +23,10 @@
    * ActivityManager.MemoryInfo()
      * Emmagee、安测试、腾讯的GT、iTest等测试工具用的此方法
    * adb shell
-     * top  查看VSS、RSS
-     * dumpsys meminfo packagename/pid  查看native进程和java进程
-     * procrank  只能查看java进程
-     * getprop | grep dalvik.vm.heapgrowhlimit  查看阈值
+     * ``` top ```  查看VSS、RSS
+     * ``` dumpsys meminfo packagename/pid ```  查看native进程和java进程
+     * ``` procrank ```  只能查看java进程
+     * ``` getprop | grep dalvik.vm.heapgrowhlimit ```  查看阈值
   * 测试场景
    * 功能测试中监测内存数据
    * 异常情况
@@ -43,8 +43,8 @@
 # CPU
  * 工具
   * adb shell
-    * dumpsys cpuinfo
-    * top
+    * ``` dumpsys cpuinfo ```
+    * ``` top ```
   * DDMS
   * Android Monitor
   * 第三方工具：Emmagee、安测试、腾讯的GT、iTest等
@@ -64,6 +64,7 @@
  * 测试方法
   * 抓包工具：tcpdump、wireshark、charles
   * adb shell (pid和uid的对应关系需要查看/data/system/packages.list，需要root权限)
-    * cat /proc/uid_stat/uid/tcp_rcv
-    * cat /proc/uid_stat/uid/tcp_snd
-    * cat /proc/net/xt_qtaguid/stats
+    * ``` cat /proc/uid_stat/uid/tcp_rcv ```
+    * ``` cat /proc/uid_stat/uid/tcp_snd ```
+    * ``` cat /proc/net/xt_qtaguid/stats ```
+    * Android4.0以下使用 ``` cat /proc/$pid/net/dev ```
