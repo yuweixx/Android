@@ -48,3 +48,9 @@
   * DDMS
   * Android Monitor
   * 第三方工具：Emmagee、安测试、腾讯的GT、iTest等
+
+# 电量
+ * 工具
+  * Battery Historion
+    * https://github.com/google/battery-historian (仅Android 5.0以上设备可用)
+  * 还可以使用安培仪或第三方软件测量，但都是整机电流变化。
