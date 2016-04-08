@@ -39,3 +39,12 @@
    * 注册某个对象后未反注册
    * 集合中对象没清理造成内存泄漏
    * 资源对象没关闭造成内存泄漏
+
+# CPU
+ * 工具
+  * adb shell
+    * dumpsys cpuinfo
+    * top
+  * DDMS
+  * Android Monitor
+  * 第三方工具：Emmagee、安测试、腾讯的GT、iTest等
