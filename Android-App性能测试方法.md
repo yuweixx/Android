@@ -63,7 +63,7 @@
   * 运行时流量均值
  * 测试方法
   * 抓包工具：tcpdump、wireshark、charles
-  * adb shell
+  * adb shell (pid和uid的对应关系需要查看/data/system/packages.list，需要root权限)
     * cat /proc/uid_stat/uid/tcp_rcv
     * cat /proc/uid_stat/uid/tcp_snd
     * cat /proc/net/xt_qtaguid/stats
