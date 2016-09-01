@@ -63,4 +63,3 @@ Interfaces (count = 1):
 最终选择了简单直接的去掉ironsource的sdk，再次上传Google Play，验证通过，问题解决。
 
 如果下次再遇到相同问题，且是必要的sdk，可以先更新sdk试试。
-# Android
