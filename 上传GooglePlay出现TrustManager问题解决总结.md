@@ -4,6 +4,7 @@
 ![](http://i.imgur.com/Ae7VFMS.png)
 点开[Google Help Center article](https://support.google.com/faqs/answer/6346016)
 ![](http://i.imgur.com/FUFTD1i.png)
+
 OK,反正有问题，该修改哪些代码呢？
 在项目中的代码中搜索“TrustManager”，并没有啊.
 ## 百度一下
