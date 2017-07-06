@@ -1,0 +1,10 @@
+下载VirtualDevice失败解决提示“Unable to create virtual device，Server returned HTTP status code 0”
+
+去C:\Users\xxx\AppData\Local\Genymobile查看日志文件gennymotion.log，找到最新的几行，发现有个https开头的地址，
+
+用浏览器打开这个地址，会返回一个json串
+
+如
+```
+7月 6 10:42:31 [Genymotion] [debug] Downloading file  "http://dl.genymotion.com/dists/7.1.0/ova/genymotion_vbox86p_7.1_170320_224018.ova"
+```
