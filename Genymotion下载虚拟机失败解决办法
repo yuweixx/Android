@@ -5,6 +5,6 @@
 用浏览器打开这个地址，会返回一个json串
 
 如
-```
+···
 7月 6 10:42:31 [Genymotion] [debug] Downloading file  "http://dl.genymotion.com/dists/7.1.0/ova/genymotion_vbox86p_7.1_170320_224018.ova"
-```
+···
